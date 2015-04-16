@@ -9,8 +9,18 @@
     <statement name="DO">
       <block type="controls_if" id="151" inline="false">
         <value name="IF0">
-          <block type="sensor_object" id="164">
-            <field name="OBJECT">LEFTFRONT</field>
+          <block type="logic_compare" id="247" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="164">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="254">
+                <field name="NUM">75</field>
+              </block>
+            </value>
           </block>
         </value>
         <statement name="DO0">
